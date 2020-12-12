@@ -1,0 +1,129 @@
+@import url('https://fonts.googleapis.com/css2?family=Questrial&display=swap');
+
+body{
+    font-family: 'Questrial', sans-serif;
+}
+
+.contenedor{
+    padding-right: 15%;
+    padding-left: 15%;
+    margin-right: auto;
+    margin-left: auto;
+    padding-top: 5%;
+    padding-bottom: 0%;
+    margin-top: auto;
+    margin-bottom: auto;
+}
+
+.addressCard{
+    padding: 3% 5%;
+    border: 1px solid rgb(150, 135, 135);
+    border-radius: 1px;
+}
+
+.addressTitle{
+    border-bottom: 3px solid #000;
+}
+
+.aTitle{
+    margin: 10px 0;
+    letter-spacing: 1px;
+}
+
+.cardContainerAddress{
+    padding-right: 10%;
+    padding-left: 10%;
+    margin-right: auto;
+    margin-left: auto;
+    padding-top: 5%;
+    padding-bottom: 5%;
+    margin-top: auto;
+    margin-bottom: auto;
+    display: flex;
+    justify-content: center;
+}
+
+.icon{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 34px;
+    width: 50px;
+    background-color: #000;
+}
+
+.fa{
+    color: white;
+}
+
+.formGroup{
+    display: flex;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+.formGroup1{
+    display: flex;
+    width: 100%;
+}
+
+.formInput{
+    height: 30px;
+    border: 1px solid rgb(150, 135, 135);
+    width: 60%;
+    padding-left: 10px;
+    font-family: 'Questrial', sans-serif;
+    /* letter-spacing: 1px */
+}
+
+::placeholder { /* Chrome, Firefox, Opera, Safari 10.1+ */
+    color:  rgb(150, 135, 135);
+    opacity: 1; /* Firefox */
+  }
+  
+  :-ms-input-placeholder { /* Internet Explorer 10-11 */
+    color:  rgb(150, 135, 135);
+  }
+  
+  ::-ms-input-placeholder { /* Microsoft Edge */
+    color:  rgb(150, 135, 135);
+  }
+
+  span{
+      width: 20px;
+  }
+
+  button{
+      height: 30px;
+      background-color: #000;
+      color: white;
+      border: 1px solid #000;
+      cursor: pointer;
+      margin-top: 10px;
+  }
+
+  .buttonText{
+    font-family: 'Questrial', sans-serif;
+    margin-top: 0;
+    margin-bottom: 0;
+    padding-top: auto;
+    padding-bottom: auto;
+    letter-spacing: 1px;
+    font-weight: 300;
+  }
+
+  @media (max-width: 800px) {
+    .formGroup {
+      display: unset;
+    }
+
+    .formGroup1{
+        margin-top: 10px;
+        margin-bottom: 10px;
+    }
+
+    .cardContainerAddress{
+        padding-right: 0%;
+        padding-left: 0%;
+    }
+  }

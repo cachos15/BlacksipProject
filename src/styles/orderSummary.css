@@ -1,0 +1,108 @@
+@import url('https://fonts.googleapis.com/css2?family=Questrial&display=swap');
+
+body{
+    font-family: 'Questrial', sans-serif;
+    font-weight: 300;
+}
+
+.contenedor{
+    padding-right: 15%;
+    padding-left: 15%;
+    margin-right: auto;
+    margin-left: auto;
+    padding-top: 5%;
+    padding-bottom: 0%;
+    margin-top: auto;
+    margin-bottom: auto;
+}
+
+.shopCard{
+    padding: 3% 5%;
+}
+
+.cardContainer{
+    padding-right: 5%;
+    padding-left: 5%;
+    margin-right: auto;
+    margin-left: auto;
+    padding-top: 5%;
+    padding-bottom: 5%;
+    margin-top: auto;
+    margin-bottom: auto;
+    border-bottom: 1px solid lightgray;
+    border-left: 1px solid lightgray;
+    border-right: 1px solid lightgray;
+    display: flex;
+    justify-content: space-between;
+}
+
+.name{
+    margin-left: 5%;
+    margin-right: 5%;
+    color: darkgray;
+    font-weight: 400;
+}
+
+.price{
+    float: right;
+}
+.shopTitle{
+    background-color: lightgray;
+    height: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.shopSummary{
+    background-color: lightgray;
+    color: #000;
+    height: 90px;
+}
+
+.shopEnd{
+    background-color: #000;
+    color: white;
+    height: 50px;
+}
+
+.editButton{
+    background-color:#cb103e;
+}
+
+.buttons{
+    float: right;
+}
+
+.right{
+    display: flex;
+    justify-content: flex-end;
+}
+
+.img{
+    display: flex;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.textGroup{
+    display: flex;
+    justify-content: space-between;
+    padding: 0% 10%;
+}
+
+.textFinal{
+    margin: 10px 0;
+}
+
+
+@media (max-width: 800px) {
+    .cardContainer{
+       display: flow-root;
+       justify-content: unset;
+    }
+    .price,.name{
+        float: unset;
+        text-align: center;
+    }
+  }
