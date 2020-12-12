@@ -70,12 +70,30 @@ body{
 .formInput{
     height: 30px;
     border: 1px solid rgb(150, 135, 135);
-    width: 60%;
+    width: 100%;
     padding-left: 10px;
     font-family: 'Questrial', sans-serif;
     /* letter-spacing: 1px */
+    outline: none;
 }
 
+.formInputInvalid{
+  height: 30px;
+  border: 1px solid red;
+  width: 100%;
+  padding-left: 10px;
+  font-family: 'Questrial', sans-serif;
+  /* letter-spacing: 1px */
+    outline: none;
+}
+
+button:disabled{
+  background-color: rgb(124, 122, 122);
+  cursor: context-menu;
+}
+.selectHeight{
+    height: 34px;
+}
 ::placeholder { /* Chrome, Firefox, Opera, Safari 10.1+ */
     color:  rgb(150, 135, 135);
     opacity: 1; /* Firefox */
@@ -86,6 +104,10 @@ body{
   }
   
   ::-ms-input-placeholder { /* Microsoft Edge */
+    color:  rgb(150, 135, 135);
+  }
+
+  .selectFirstOption{
     color:  rgb(150, 135, 135);
   }
 
@@ -111,6 +133,58 @@ body{
     letter-spacing: 1px;
     font-weight: 300;
   }
+  
+  .checkText{
+      color:rgb(150, 135, 135);
+      display: flex;
+      align-items: center;
+      letter-spacing: 0px !important;
+  }
+  .checkInput {
+    width: 100%;
+    position: relative;
+    margin: 20px auto;
+    display: flex;
+  }
+  .checkInput label {
+    width: 15px;
+    height: 15px;
+    cursor: pointer;
+    position: absolute;
+    top: 0;
+    left: 0;
+    background: #fcfff4;
+    background: white;
+    border: 1px solid rgb(150, 135, 135);
+    border-radius: 4px;
+    box-shadow: inset 0px 1px 1px white, 0px 1px 3px rgba(0, 0, 0, 0.5);
+  }
+  .checkInput label:after {
+    content: "";
+    width: 7px;
+    height: 3px;
+    position: absolute;
+    top: 3px;
+    left: 3px;
+    border: 2px solid red;
+    border-top: none;
+    border-right: none;
+    background: transparent;
+    /* opacity: 0; */
+    display: none;
+    -webkit-transform: rotate(-45deg);
+            transform: rotate(-45deg);
+  }
+  .checkInput label:hover::after {
+    opacity: 0.5;
+  }
+  .checkInput input[type="checkbox"] {
+    visibility: hidden;
+  }
+  .checkInput input[type="checkbox"]:checked + label:after {
+    display: block;
+  }
+  
 
   @media (max-width: 800px) {
     .formGroup {
