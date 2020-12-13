@@ -1,190 +1,187 @@
 @import url('https://fonts.googleapis.com/css2?family=Questrial&display=swap');
-
-body{
-    font-family: 'Questrial', sans-serif;
-}
-
-.contenedor{
-    padding-right: 15%;
-    padding-left: 15%;
-    margin-right: auto;
-    margin-left: auto;
-    padding-top: 5%;
-    padding-bottom: 0%;
-    margin-top: auto;
-    margin-bottom: auto;
-}
-
 .addressCard{
-    padding: 3% 5%;
-    border: 1px solid rgb(150, 135, 135);
-    border-radius: 1px;
+  border: 1px solid rgb(150, 135, 135);
+  border-radius: 1px;
+  padding: 3% 5%;
 }
 
 .addressTitle{
-    border-bottom: 3px solid #000;
+  border-bottom: 3px solid #000;
 }
 
 .aTitle{
-    margin: 10px 0;
-    letter-spacing: 1px;
+  letter-spacing: 1px;
+  margin: 10px 0;
 }
 
-.cardContainerAddress{
-    padding-right: 10%;
-    padding-left: 10%;
-    margin-right: auto;
-    margin-left: auto;
-    padding-top: 5%;
-    padding-bottom: 5%;
-    margin-top: auto;
-    margin-bottom: auto;
-    display: flex;
-    justify-content: center;
-}
-
-.icon{
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    height: 34px;
-    width: 50px;
-    background-color: #000;
-}
-
-.fa{
-    color: white;
-}
-
-.formGroup{
-    display: flex;
-    margin-top: 10px;
-    margin-bottom: 10px;
-}
-
-.formGroup1{
-    display: flex;
-    width: 100%;
-}
-
-.formInput{
-    height: 30px;
-    border: 1px solid rgb(150, 135, 135);
-    width: 100%;
-    padding-left: 10px;
-    font-family: 'Questrial', sans-serif;
-    /* letter-spacing: 1px */
-    outline: none;
-}
-
-.formInputInvalid{
-  height: 30px;
-  border: 1px solid red;
-  width: 100%;
-  padding-left: 10px;
+body{
   font-family: 'Questrial', sans-serif;
-  /* letter-spacing: 1px */
-    outline: none;
 }
+
 
 button:disabled{
   background-color: rgb(124, 122, 122);
   cursor: context-menu;
 }
+
+
+button{
+  background-color: #000;
+  border: 1px solid #000;
+  color: white;
+  cursor: pointer;
+  height: 30px;
+  margin-top: 10px;
+}
+
+.buttonText{
+  font-family: 'Questrial', sans-serif;
+  font-weight: 300;
+  letter-spacing: 1px;
+  margin-top: 0;
+  margin-bottom: 0;
+  padding-top: auto;
+  padding-bottom: auto;
+}
+
+.checkText{
+  align-items: center;
+  color:rgb(150, 135, 135);
+  display: flex;
+  letter-spacing: 0px !important;
+}
+.checkInput {
+  display: flex;
+  margin: 20px auto;
+  position: relative;
+  width: 100%;
+}
+.checkInput label {
+  background: #fcfff4;
+  background: white;
+  border: 1px solid rgb(150, 135, 135);
+  border-radius: 4px;
+  box-shadow: inset 0px 1px 1px white, 0px 1px 3px rgba(0, 0, 0, 0.5);
+  cursor: pointer;
+  left: 0;
+  height: 15px;
+  width: 15px;
+  position: absolute;
+  top: 0;
+}
+.checkInput label:after {
+  background: transparent;
+  border: 2px solid red;
+  border-right: none;
+  border-top: none;
+  content: "";
+  display: none;
+  height: 3px;
+  left: 3px;
+  position: absolute;
+  top: 3px;
+  width: 7px;
+  -webkit-transform: rotate(-45deg);
+          transform: rotate(-45deg);
+}
+.checkInput label:hover::after {
+  opacity: 0.5;
+}
+.checkInput input[type="checkbox"] {
+  visibility: hidden;
+}
+.checkInput input[type="checkbox"]:checked + label:after {
+  display: block; 
+}
+
+.cardContainerAddress{
+  display: flex;
+  justify-content: center;
+  margin-bottom: auto;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: auto;
+  padding-bottom: 5%;
+  padding-left: 10%;
+  padding-right: 10%;
+  padding-top: 5%;
+}
+
+.contenedor{
+  margin-bottom: auto;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: auto;
+  padding-bottom: 0%;
+  padding-left: 15%;
+  padding-right: 15%;
+  padding-top: 5%;
+}
+
+.icon{
+  align-items: center;
+  background-color: #000;
+  display: flex;
+  height: 34px;
+  justify-content: center;
+  width: 50px;
+}
+
+.fa{
+  color: white;
+}
+
+.formGroup{
+  display: flex;
+  margin-bottom: 10px;
+  margin-top: 10px;
+}
+
+.formGroup1{
+  display: flex;
+  width: 100%;
+}
+
+.formInput{
+  border: 1px solid rgb(150, 135, 135);
+  font-family: 'Questrial', sans-serif;
+  height: 30px;
+  outline: none;
+  padding-left: 10px;
+  width: 100%;
+}
+
+.formInputInvalid{
+  border: 1px solid red;
+  font-family: 'Questrial', sans-serif;
+  height: 30px;
+  outline: none;
+  padding-left: 10px;
+  width: 100%;
+}
+
+.selectFirstOption{
+  color:  rgb(150, 135, 135);
+}
+
 .selectHeight{
-    height: 34px;
+  height: 34px;
+}
+span{
+  width: 20px;
 }
 ::placeholder { /* Chrome, Firefox, Opera, Safari 10.1+ */
-    color:  rgb(150, 135, 135);
-    opacity: 1; /* Firefox */
-  }
-  
-  :-ms-input-placeholder { /* Internet Explorer 10-11 */
-    color:  rgb(150, 135, 135);
-  }
-  
-  ::-ms-input-placeholder { /* Microsoft Edge */
-    color:  rgb(150, 135, 135);
-  }
+  color:  rgb(150, 135, 135);
+  opacity: 1; /* Firefox */
+}
 
-  .selectFirstOption{
-    color:  rgb(150, 135, 135);
-  }
-
-  span{
-      width: 20px;
-  }
-
-  button{
-      height: 30px;
-      background-color: #000;
-      color: white;
-      border: 1px solid #000;
-      cursor: pointer;
-      margin-top: 10px;
-  }
-
-  .buttonText{
-    font-family: 'Questrial', sans-serif;
-    margin-top: 0;
-    margin-bottom: 0;
-    padding-top: auto;
-    padding-bottom: auto;
-    letter-spacing: 1px;
-    font-weight: 300;
-  }
+:-ms-input-placeholder { /* Internet Explorer 10-11 */
+  color:  rgb(150, 135, 135);
+}
   
-  .checkText{
-      color:rgb(150, 135, 135);
-      display: flex;
-      align-items: center;
-      letter-spacing: 0px !important;
-  }
-  .checkInput {
-    width: 100%;
-    position: relative;
-    margin: 20px auto;
-    display: flex;
-  }
-  .checkInput label {
-    width: 15px;
-    height: 15px;
-    cursor: pointer;
-    position: absolute;
-    top: 0;
-    left: 0;
-    background: #fcfff4;
-    background: white;
-    border: 1px solid rgb(150, 135, 135);
-    border-radius: 4px;
-    box-shadow: inset 0px 1px 1px white, 0px 1px 3px rgba(0, 0, 0, 0.5);
-  }
-  .checkInput label:after {
-    content: "";
-    width: 7px;
-    height: 3px;
-    position: absolute;
-    top: 3px;
-    left: 3px;
-    border: 2px solid red;
-    border-top: none;
-    border-right: none;
-    background: transparent;
-    /* opacity: 0; */
-    display: none;
-    -webkit-transform: rotate(-45deg);
-            transform: rotate(-45deg);
-  }
-  .checkInput label:hover::after {
-    opacity: 0.5;
-  }
-  .checkInput input[type="checkbox"] {
-    visibility: hidden;
-  }
-  .checkInput input[type="checkbox"]:checked + label:after {
-    display: block;
-  }
-  
+::-ms-input-placeholder { /* Microsoft Edge */
+  color:  rgb(150, 135, 135);
+}
 
   @media (max-width: 800px) {
     .formGroup {
@@ -192,13 +189,13 @@ button:disabled{
     }
 
     .formGroup1{
-        margin-top: 10px;
-        margin-bottom: 10px;
+      margin-bottom: 10px;
+      margin-top: 10px;
     }
 
     .cardContainerAddress{
-        padding-right: 0%;
-        padding-left: 0%;
+      padding-left: 0%;
+      padding-right: 0%;
     }
     span{
       display: none;

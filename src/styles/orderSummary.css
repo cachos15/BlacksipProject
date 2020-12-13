@@ -5,85 +5,85 @@ body{
     font-weight: 300;
 }
 
-.contenedor{
-    padding-right: 15%;
-    padding-left: 15%;
-    margin-right: auto;
-    margin-left: auto;
-    padding-top: 5%;
-    padding-bottom: 0%;
-    margin-top: auto;
-    margin-bottom: auto;
+.buttons{
+    float: right;
 }
 
-.shopCard{
-    padding: 3% 5%;
+.contenedor{
+    margin-bottom: auto;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: auto;
+    padding-bottom: 0%;
+    padding-left: 15%;
+    padding-right: 15%;
+    padding-top: 5%;
 }
+
 
 .cardContainer{
-    padding-right: 5%;
-    padding-left: 5%;
-    margin-right: auto;
-    margin-left: auto;
-    padding-top: 5%;
-    padding-bottom: 5%;
-    margin-top: auto;
-    margin-bottom: auto;
     border-bottom: 1px solid lightgray;
     border-left: 1px solid lightgray;
     border-right: 1px solid lightgray;
     display: flex;
     justify-content: space-between;
+    margin-bottom: auto;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: auto;
+    padding-bottom: 5%;
+    padding-left: 5%;
+    padding-right: 5%;
+    padding-top: 5%;
+}
+
+.editButton{
+    background-color:#cb103e;
+}
+.img{
+    display: flex;
+    margin-left: auto;
+    margin-right: auto;
 }
 
 .name{
-    margin-left: 5%;
-    margin-right: 5%;
     color: darkgray;
     font-weight: 400;
+    margin-left: 5%;
+    margin-right: 5%;
 }
 
 .price{
     float: right;
 }
-.shopTitle{
-    background-color: lightgray;
-    height: 50px;
+.right{
     display: flex;
-    align-items: center;
-    justify-content: center;
+    justify-content: flex-end;
 }
 
+.shopCard{
+    padding: 3% 5%;
+}
+.shopEnd{
+    background-color: #000;
+    color: white;
+    height: 50px;
+}
 .shopSummary{
     background-color: lightgray;
     color: #000;
     height: 90px;
 }
 
-.shopEnd{
-    background-color: #000;
-    color: white;
+
+.shopTitle{
+    align-items: center;
+    background-color: lightgray;
+    display: flex;
     height: 50px;
+    justify-content: center;
 }
 
-.editButton{
-    background-color:#cb103e;
-}
-
-.buttons{
-    float: right;
-}
-
-.right{
-    display: flex;
-    justify-content: flex-end;
-}
-
-.img{
-    display: flex;
-    margin-left: auto;
-    margin-right: auto;
-}
 
 .textGroup{
     display: flex;

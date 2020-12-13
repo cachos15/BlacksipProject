@@ -1,7 +1,6 @@
 import React, { useEffect, useState } from 'react';
 import getPostalCode from '../services/PostalCodeService';
 import sendContact from '../services/ContactService';
-import getProducts from '../services/ProductService';
 import '../styles/addressForm.css';
 import { faUser, faEnvelope, faPhoneAlt, faMapMarkerAlt, faMapMarkedAlt } from "@fortawesome/free-solid-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
